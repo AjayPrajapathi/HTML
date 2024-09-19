@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <!-- ALL BSICS OF INPUT -->
+    <div class="form1">
+    <form>
+        <label for="rating">Rating (1-10):</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" value="5" step="1" oninput="this.nextElementSibling.value = this.value">
+        <output>5</output><br><br>
+
+        <div><label for="name">Name</label> <br><input type="text" id="name" name="name" value="Kumar"
+                placeholder="Your Name" maxlength="10"></div>
+        <div><label for="phno">Ph No:</label> <br><input type="tel" id="phno" placeholder="Ph No" autofocus></div>
+
+        <div><label for="email">Email</label> <br><input type="email" id="email" name="email" placeholder="enter email"
+                required multiple></div>
+
+        <div><label for="salary">salary Disabled</label><input value="5000" type="number" id="salary" name="salary"
+                disabled></div>
+        <div><label for="date">Date</label> <br><input type="date" id="date" name="date" placeholder="Enter Date"></div>
+        <div><label for="url">Url</label> <br><input type="url" id="url" placeholder="Enter Url"></div>
+        <div><label for="range">Range</label> <br><input type="range" id="range" step="10" placeholder="Enter range">
+        </div>
+        <div><label for="search">Search</label> <br><input type="search" id="search" placeholder="Search"></div>
+        <div><label for="dtl">datetime-local</label> <br><input type="datetime-local" id="dtl"
+                placeholder="datetime-local"></div>
+        <div><label for="time">Time</label> <br><input type="time" id="time" placeholder="enter time"></div>
+        <div><label for="week">Week</label> <br><input type="week" id="name" placeholder="Week"></div>
+        <div><label for="color">Color</label> <br><input type="color" id="color" name="color" placeholder="Enter color">
+        </div>
+        <div><label for="file">choose file</label> <br><input type="file" id="file" placeholder=""></div>
+        <div><label for="name">Name</label> <br><input type="email" id="name" placeholder=""></div>
+
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Your comments here..." required></textarea>
+
+    </form>
+
+</div>
+
+
+
+<!-- CHECK-BOX -->
+
+
+
+    <hr>
+
+<div class="form2">
+  <h1>CHECK BOX</h1>
+    <form>
+        <label>
+          <input type="checkbox" name="subscribe" value="yes">
+          Subscribe to newsletter
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="unsubscribe" value="no" checked>
+            Subscribe to newsletter
+          </label>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+
+
+    <!-- RADIO BUTTON -->
+      <hr>
+<div class="form3">
+<h1>radio button</h1>
+<form action="/submit" method="POST">
+    <fieldset>
+      <legend>Select your favorite fruit:</legend>
+      <label>
+        <input type="radio" name="fruit" value="apple" required>
+        Apple
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="fruit" value="banana">
+        Banana
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="fruit" value="orange" checked>
+        Orange
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="fruit" value="grape">
+        Grape
+      </label>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<!-- DROPDOWN -->
+  <hr>
+  <div class="form4">
+    <h1>DROPDOWN FORM</h1>
+  <h1>Select Your Country</h1>
+    <form>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa" >United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk" >United Kingdom</option>
+            <option value="australia" selected>Australia</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+</div>
+
+</body>
+
+</html>
